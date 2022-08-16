@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/login.js"></script>
+    <style>
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <body>
+        <!-- <div class="container">
+            <h1>Please Login</h1>
+            <form>
+                <div class="form-control">
+                    <input type="text" placeholder ="E-mail" required>
+                    
+                    
+                </div>
+    
+                <div class="form-control">
+                    <input type="password" placeholder="password" required>
+                
+                </div>
+                <button class="btn">Login</button>
+    
+                <p class="text">Don't have an account? <a href="#">Register</a></p>
+                <p class="text">Forgot password? <a href="#">Forgot</a></p>
+            </form>
+        </div>  -->
+
+         <div class="container">
+      <div id="login" class="d-flex justify-content-center flex-column">
+        <h1 class="text-center">Login</h1>
+        <form onsubmit="Login(event)" class="text-center my-3">
+          <input type="email" placeholder="Email" id="#email" />
+          <input type="text" placeholder="Password" id="#password" />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+
+      <h2>Dont have an account? Register here</h2>
+
+ <form onsubmit="Register(event)" class="text-center my-3">
+    <input type="email" placeholder="Email" id="#email" />
+    <input type="text" placeholder="Password" id="#password" />
+    <button type="submit">Register</button>
+  </form>
+
+
+    
+        <script src="./script/login.js"></script>
+    </body>
+</body>
+</html>
