@@ -57,7 +57,6 @@ function showItems(products) {
                 <h4 id="productDescriptions">${product.description}</h4>
                 <p id="productPrice">Price: R${product.price}</p>
                 <p id="productStock">Stock: ${product.quantity}</p>
-                <button>Add to cart<button>
             </div>
         </div>
     </div>

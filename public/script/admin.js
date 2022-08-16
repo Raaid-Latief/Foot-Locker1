@@ -50,3 +50,45 @@ function showUsers(users) {
 }
 
 
+
+fetch('https://foot-locker.herokuapp.com/products')
+  .then((res) => res.json())
+  .then((data) => {
+    items = data;
+    console.log(data);
+    showItems(data);
+  });
+
+function showItems(products) {
+  //   prodContainer.innerHTML = "";
+  products.forEach((product) => {
+    prodContainer.innerHTML += `
+    <div class="col-md-12 d-flex justify-content-center my-4">
+        <div id="users">
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${product.title}}</td>
+            <td${product.description}</td>
+            <td>R${product.price}</td>
+            <td>${product.quantity}</td>
+            <td>${product.imgURL}</td>
+          </tr>
+      </table>
+        </div>
+    </div>
+    `;
+  });
+}
+
+
+
